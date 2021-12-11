@@ -35,7 +35,7 @@ configurations {
 configurations.compileClasspath.extendsFrom(configurations.libraries)
 
 dependencies {
-    compileOnly 'com.coolspy3:csmodloader:1.0.1'
+    compileOnly 'com.coolspy3:csmodloader:1.2.0'
     compileOnly 'com.coolspy3:cspackets:1.2.0'
     testImplementation     'junit:junit:4.13'
 }
