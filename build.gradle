@@ -32,7 +32,7 @@ configurations {
     libraries
 }
 
-configurations.compileClasspath.extendsFrom(configurations.libraries)
+configurations.implementation.extendsFrom(configurations.libraries)
 
 dependencies {
     compileOnly 'com.coolspy3:csmodloader:1.0.1'
@@ -43,9 +43,5 @@ dependencies {
 jar {
     from(configurations.libraries) {
         into 'META-INF/libraries'
-    }
-
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
